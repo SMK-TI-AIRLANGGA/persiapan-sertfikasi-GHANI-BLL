@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Perpustakaan Book</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="book.js" defer></script>
 </head>
 <body>
     <nav class="navbar">
@@ -21,6 +22,10 @@
     
 <main class="main-content">
         <h1 class="page-title">Daftar Buku</h1>
+        <div class="search-wrapper">
+            <input type="text" id="searchInput" placeholder="Cari Buku" onkeyup="searchBooks()">
+            <span class="search-icon">➤</span>
+        </div>
 
         <div class="books-container">
             <div class="book-list">
@@ -93,14 +98,14 @@
                     </div>
                 </div>
                 <div class="book-item">
-                    <div class="book-cover-4">      
+                    <div class="book-cover-5">      
                     </div>
                     <div class="book-info">
-                        <div class="book-title">Halaman Goa</div>
-                        <div class="book-meta">Penulis: Tere Liye</div>
-                        <div class="book-meta">Peminjam: Dewi Lestari</div>
-                        <div class="book-meta">Tgl Pinjam: 3 Januari 2026</div>
-                        <div class="book-meta">Jatuh Tempo: 17 Januari 2026</div>
+                        <div class="book-title">Dunia Catur</div>
+                        <div class="book-meta">Penulis: Liam Niandi</div>
+                        <div class="book-meta">Peminjam: Ghani</div>
+                        <div class="book-meta">Tgl Pinjam: 4 Januari 2026</div>
+                        <div class="book-meta">Jatuh Tempo: 18 Januari 2026</div>
                         <span class="book-status status-dipinjam">Dipinjam</span>
                     </div>
                     <div class="book-actions">
@@ -109,19 +114,18 @@
                     </div>
                 </div>
                 <div class="book-item">
-                    <div class="book-cover-4">      
+                    <div class="book-cover-6">      
                     </div>
                     <div class="book-info">
-                        <div class="book-title">Halaman Goa</div>
-                        <div class="book-meta">Penulis: Tere Liye</div>
-                        <div class="book-meta">Peminjam: Dewi Lestari</div>
-                        <div class="book-meta">Tgl Pinjam: 3 Januari 2026</div>
-                        <div class="book-meta">Jatuh Tempo: 17 Januari 2026</div>
-                        <span class="book-status status-dipinjam">Dipinjam</span>
+                        <div class="book-title">Kartu Berlimpah</div>
+                        <div class="book-meta">Penulis: Mita Lalasi</div>
+                        <div class="book-meta">Peminjam: Roghaise</div>
+                        <div class="book-meta">Tgl Pinjam: 8 Januari 2026</div>
+                        <div class="book-meta">Jatuh Tempo: 22 Januari 2026</div>
+                        <span class="book-status status-kembali">Sudah Dikembalikan</span>
                     </div>
                     <div class="book-actions">
-                        <button class="btn btn-return" onclick="alert('Buku dikembalikan!')">Kembalikan</button>
-                        <button class="btn btn-extend" onclick="alert('Perpanjang peminjaman!')">Perpanjang</button>
+                        <button class="btn btn-extend">Pinjam Lagi</button>
                     </div>
                 </div>
             </div>
