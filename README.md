@@ -68,11 +68,11 @@ perpus-baru/
 
 ## Preview Aplikasi
 
-<img src="preview/beranda.png" width="400">
-<img src="preview/book.png" width="400">
+<img src="preview/beranda.png" width="250">
+<img src="preview/book1.png" width="250">
 
 <img src="preview/beranda1.png" width="250">
-<img src="preview/book1.png" width="250">
+<img src="preview/book.png" width="250">
 
 ## License
 
