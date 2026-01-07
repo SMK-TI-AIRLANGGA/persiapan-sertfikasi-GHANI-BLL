@@ -818,3 +818,13 @@ footer {
     font-size: 1.2rem;
     pointer-events: none;
 }
+
+#no-result-message {
+    text-align: center;
+    padding: 3rem 1rem;
+}
+
+.no-result-content {
+    color: #64748b;
+    font-size: 1.1rem;
+}
