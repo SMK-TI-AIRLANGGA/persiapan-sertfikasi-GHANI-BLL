@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perpustakaan</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">Perpustakaan</a>
+            <ul class="nav-menu">
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="book.html">Katalog Buku</a></li>
+                <li><a href="peminjaman.html">Peminjaman</a></li>
+                <li><a href="#about">Tentang</a></li>
+            </ul>
+            <button class="login-btn">Login</button>
+        </div>
+    </nav>
+    
+<main class="main-content">
+        <h1 class="page-title">Daftar Buku Peminjam</h1>
+
+        <div class="books-container">
+            <div class="book-list">
+                <div class="book-item">
+                    <div class="book-cover-1">
+                    </div>
+                    <div class="book-info">
+                        <div class="book-title">Angkasa Melihat</div>
+                        <div class="book-meta">Penulis: Andrea Hirata</div>
+                        <div class="book-meta">Peminjam: Budi Santoso</div>
+                        <div class="book-meta">Tgl Pinjam: 1 Januari 2026</div>
+                        <div class="book-meta">Jatuh Tempo: 15 Januari 2026</div>
+                        <span class="book-status status-dipinjam">Dipinjam</span>
+                    </div>
+                    <div class="book-actions">
+                        <button class="btn btn-return" onclick="alert('Buku dikembalikan!')">Kembalikan</button>
+                        <button class="btn btn-extend" onclick="alert('Perpanjang peminjaman!')">Perpanjang</button>
+                    </div>
+                </div>
+
+                <div class="book-item">
+                    <div class="book-cover-2">
+                    </div>
+                    <div class="book-info">
+                        <div class="book-title">Menyala api</div>
+                        <div class="book-meta">Penulis: Pramoedya Ananta Toer</div>
+                        <div class="book-meta">Peminjam: Siti Nurhaliza</div>
+                        <div class="book-meta">Tgl Pinjam: 28 Desember 2025</div>
+                        <div class="book-meta">Jatuh Tempo: 11 Januari 2026</div>
+                        <span class="book-status status-dipinjam">Dipinjam</span>
+                    </div>
+                    <div class="book-actions">
+                        <button class="btn btn-return" onclick="alert('Buku dikembalikan!')">Kembalikan</button>
+                        <button class="btn btn-extend" onclick="alert('Perpanjang peminjaman!')">Perpanjang</button>
+                    </div>
+                </div>
+
+                <div class="book-item">
+                    <div class="book-cover-3">
+
+                    </div>
+                    <div class="book-info">
+                        <div class="book-title">Dunia luar</div>
+                        <div class="book-meta">Penulis: Ahmad Tohari</div>
+                        <div class="book-meta">Peminjam: Ahmad Dahlan</div>
+                        <div class="book-meta">Tgl Pinjam: 20 Desember 2025</div>
+                        <div class="book-meta">Dikembalikan: 3 Januari 2026</div>
+                        <span class="book-status status-kembali">Sudah Dikembalikan</span>
+                    </div>
+                    <div class="book-actions">
+                        <button class="btn btn-extend">Pinjam Lagi</button>
+                    </div>
+                </div>
+
+                <div class="book-item">
+                    <div class="book-cover-4">      
+                    </div>
+                    <div class="book-info">
+                        <div class="book-title">Halaman Goa</div>
+                        <div class="book-meta">Penulis: Tere Liye</div>
+                        <div class="book-meta">Peminjam: Dewi Lestari</div>
+                        <div class="book-meta">Tgl Pinjam: 3 Januari 2026</div>
+                        <div class="book-meta">Jatuh Tempo: 17 Januari 2026</div>
+                        <span class="book-status status-dipinjam">Dipinjam</span>
+                    </div>
+                    <div class="book-actions">
+                        <button class="btn btn-return" onclick="alert('Buku dikembalikan!')">Kembalikan</button>
+                        <button class="btn btn-extend" onclick="alert('Perpanjang peminjaman!')">Perpanjang</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="features">
+            <div class="feature-card">
+                <div class="feature-icon">📚</div>
+                <h3 class="feature-title">Koleksi Lengkap</h3>
+                <p class="feature-desc">Ribuan buku dari berbagai kategori tersedia untuk Anda</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">⏰</div>
+                <h3 class="feature-title">Peminjaman Mudah</h3>
+                <p class="feature-desc">Proses peminjaman cepat dan praktis secara online</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🔔</div>
+                <h3 class="feature-title">Notifikasi</h3>
+                <p class="feature-desc">Dapatkan pengingat sebelum tanggal jatuh tempo</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Tentang Kami</h3>
+                <p>Perpustakaan Digital adalah platform peminjaman buku online yang memudahkan akses ke ribuan koleksi buku berkualitas.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Menu</h3>
+                <ul>
+                    <li><a href="#home">Beranda</a></li>
+                    <li><a href="#books">Katalog Buku</a></li>
+                    <li><a href="#peminjaman">Peminjaman</a></li>
+                    <li><a href="#about">Tentang</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Kontak</h3>
+                <ul>
+                    <li>Email: ghanizen30@gmail.com</li>
+                    <li>Telepon: 0823-5088-9069</li>
+                    <li>Alamat : Jl. Pahlawan No.2A Samarinda</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Perpustakaan Digital.</p>
+        </div>
+    </footer>
+</body>
+</html>
