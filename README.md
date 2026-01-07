@@ -68,10 +68,11 @@ perpus-baru/
 
 ## Preview Aplikasi
 
-![Tampilan Beranda](preview/beranda.png)
-![Tampilan Beranda Mobile](preview/beranda1.png)
-![Tampilan Katalog Buku](preview/book.png)
-![Tampilan Katalog Buku Mobile](preview/book1.png)
+<img src="preview/beranda.png" width="400">
+<img src="preview/book.png" width="400">
+
+<img src="preview/beranda1.png" width="250">
+<img src="preview/book1.png" width="250">
 
 ## License
 
