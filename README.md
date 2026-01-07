@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-
-=======
-
 # Persiapan Sertifikasi - GHANI BLL
 
 Repository ini berisi materi dan soal latihan untuk persiapan **Uji Sertifikasi Kompetensi (USK)** yang diikuti oleh siswa SMK TI Airlangga jurusan PPLG (Pengembangan Perangkat Lunak dan Gim).
@@ -73,9 +69,10 @@ perpus-baru/
 ## Preview Aplikasi
 
 ![Tampilan Beranda](preview/beranda.png)
+![Tampilan Beranda Mobile](preview/beranda1.png)
+![Tampilan Katalog Buku](preview/book.png)
+![Tampilan Katalog Buku Mobile](preview/book1.png)
 
 ## License
 
 Project ini dibuat untuk keperluan pembelajaran.
-
-> > > > > > > 94b346461a1aa16557b4273d8bddcbfd7691f32b
