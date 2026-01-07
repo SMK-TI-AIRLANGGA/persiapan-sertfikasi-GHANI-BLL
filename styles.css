@@ -8,23 +8,24 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
     color: #333;
-    background-color: #92400e;
+    background-color: #1a1d2e;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
 }
-/* Navbar Styles */
+
 .navbar {
-    background: rgba(255, 255, 255, 0.98);
+    background: #101824;
     backdrop-filter: blur(10px);
     padding: 1rem 0;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
     position: sticky;
     top: 0;
     z-index: 1000;
 }
+
 .navbar a {
-    color: #92400e;
+    color: #ffffff;
     text-decoration: none;
     padding: 10px 15px;
     display: block; 
@@ -33,7 +34,8 @@ body {
 }
 
 .navbar a:hover {
-    transform: translateY(-5px); 
+    transform: translateY(-3px) scale(1.05);
+    opacity: 0.9; 
 }
 
 .nav-container {
@@ -45,22 +47,45 @@ body {
     align-items: center;
 }
 
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.logo-image {
+    width: 45px;
+    height: 45px;
+    object-fit: cover;
+    border-radius: 50%;
+    filter: brightness(1.1);
+    transition: transform 0.3s ease;
+    padding: 2px;
+    background: white;
+}
+
+.logo-image:hover {
+    transform: scale(1.1) rotate(5deg);
+}
+
 .logo {
     font-size: 1.5rem;
     font-weight: bold;
-    color: #92400e;
+    color: #00AA13;
     text-decoration: none;
+    padding: 0;
 }
 
 .nav-menu {
     display: flex;
     list-style: none;
     gap: 2rem;
+    font-variant: small-caps;
 }
 
 .nav-menu a {
     text-decoration: none;
-    color: #2d3748;
+    color: #ffffff;
     font-weight: 500;
     transition: color 0.3s;
     position: relative;
@@ -68,11 +93,11 @@ body {
 }
 
 .nav-menu a:hover {
-    color: #2c5364;
+    color: #00AA13;
 }
 
 .nav-menu a.active {
-    color: #2c5364;
+    color: #00AA13;
 }
 
 .nav-menu a.active::after {
@@ -82,11 +107,12 @@ body {
     left: 0;
     width: 100%;
     height: 3px;
-    background: linear-gradient(135deg, #2c5364 0%, #d4af37 100%);
+    background: #00AA13;
     border-radius: 2px;
 }
+
 .login-btn {
-    background: #ea6666;
+    background: #00AA13;
     color: white;
     border: none;
     padding: 0.7rem 1.5rem;
@@ -97,12 +123,45 @@ body {
 }
 
 .login-btn:hover {
-    background: #eb3508;
+    background: #008f10;
     transform: translateY(-2px);
-    box-shadow: 0 5px 15px rgba(102, 126, 234, 0.3);
+    box-shadow: 0 5px 15px rgba(0, 170, 19, 0.3);
 }
 
-/* Main Content */
+.btn-return {
+    background: #FF6B35;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.3s;
+}
+
+.btn-extend {
+    background: #00AA13;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.3s;
+}
+
+.btn-return:hover {
+    background: #e55a2a;
+    color: white;
+    cursor: pointer;
+}
+
+.btn-extend:hover {
+    background: #008f10;
+    color: white;
+    cursor: pointer;
+}
+
 .main-content {
     flex: 1;
     max-width: 1200px;
@@ -113,14 +172,13 @@ body {
 
 .page-title {
     text-align: center;
-    color: #f7fafc;
+    color: #f8f8f8;
     margin-bottom: 2rem;
     font-size: 2.5rem;
     text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
     letter-spacing: 0.5px;
 }
 
-/* List Buku Peminjam */
 .books-container {
     background: linear-gradient(145deg, #ffffff 0%, #f8fafc 100%);
     border-radius: 20px;
@@ -130,7 +188,7 @@ body {
 
 .section-title {
     font-size: 1.8rem;
-    color: #2c5364;
+    color: #101824;
     text-align: center;
     padding-bottom: 0.5rem;
 }
@@ -154,66 +212,15 @@ body {
 
 .book-item:hover {
     transform: translateY(-5px);
-    box-shadow: 0 8px 25px rgba(44, 83, 100, 0.2);
 }
 
-.book-cover-1 {
-    width: 80px;
-    height: 100px;
-    background: linear-gradient(135deg, #2c5364 0%, #0f2027 100%);
-    background-image: url('fotobuku/angkasa.png');
-    background-size: cover;
-    border-radius: 5px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    font-weight: bold;
-    font-size: 0.8rem;
-    text-align: center;
-    padding: 0.5rem;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-}
-.book-cover-2 {
-    width: 80px;
-    height: 100px;
-    background: linear-gradient(135deg, #2c5364 0%, #0f2027 100%);
-    background-image: url('fotobuku/api.png');
-    background-size: cover;
-    border-radius: 5px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    font-weight: bold;
-    font-size: 0.8rem;
-    text-align: center;
-    padding: 0.5rem;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-}
-
-.book-cover-3 {
-    width: 80px;
-    height: 100px;
-    background: linear-gradient(135deg, #2c5364 0%, #0f2027 100%);
-    background-image: url('fotobuku/dunia.png');
-    background-size: cover;
-    border-radius: 5px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    font-weight: bold;
-    font-size: 0.8rem;
-    text-align: center;
-    padding: 0.5rem;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-}
+.book-cover-1,
+.book-cover-2,
+.book-cover-3,
 .book-cover-4 {
     width: 80px;
     height: 100px;
-    background: linear-gradient(135deg, #2c5364 0%, #0f2027 100%);
-    background-image: url('fotobuku/goa.png');
+    background: linear-gradient(135deg, #101824 0%, #1a1d2e 100%);
     background-size: cover;
     border-radius: 5px;
     display: flex;
@@ -225,6 +232,22 @@ body {
     text-align: center;
     padding: 0.5rem;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.book-cover-1 {
+    background-image: url('fotobuku/angkasa.png');
+}
+
+.book-cover-2 {
+    background-image: url('fotobuku/api.png');
+}
+
+.book-cover-3 {
+    background-image: url('fotobuku/dunia.png');
+}
+
+.book-cover-4 {
+    background-image: url('fotobuku/goa.png');
 }
 
 .book-info {
@@ -259,8 +282,8 @@ body {
 }
 
 .status-kembali {
-    background: #34d399;
-    color: #065f46;
+    background: #00AA13;
+    color: #ffffff;
 }
 
 .book-actions {
@@ -268,55 +291,259 @@ body {
     gap: 0.5rem;
     flex-direction: column;
 }
-.features {
-    display: flex; 
-    justify-content: center; 
-    gap: 20px;
-    flex-wrap: wrap; 
-    padding: 40px 20px; 
+
+.home-content {
+    text-align: center;
+    color: #ffffff;
+    margin-top: 70px;
+    padding: 0 20px;
 }
 
-.feature-card {
-    background-color: #ffffff; 
-    border-radius: 8px; 
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); 
-    padding: 30px;
-    text-align: center; 
-    flex: 1; 
-    min-width: 200px; 
-    max-width: 300px; 
-    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+.home-content h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.4);
+    letter-spacing: 2px;
 }
 
-.feature-card:hover {
-    transform: translateY(-5px); 
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15); 
+.paragaph {
+    text-align: center;
+    line-height: 2;
+    color: #ffffff;
+    margin: 0 auto 50px; 
+    max-width: 800px;
+    font-size: 1.15rem;
+    font-weight: 400;
+    padding: 35px 45px;
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+    position: relative;
+    letter-spacing: 0.3px;
+    font-family: 'Georgia', 'Times New Roman', serif;
 }
 
+.paragaph::before {
+    content: '📚';
+    position: absolute;
+    top: -25px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 2.5rem;
+    background: rgba(255, 255, 255, 0.95);
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
 
+.paragaph p {
+    margin: 0;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+    font-style: normal;
+}
+
+.library-showcase {
+    max-width: 1200px;
+    margin: 60px auto;
+    padding: 0 20px;
+}
+
+.showcase-item {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    align-items: center;
+    margin-bottom: 80px;
+    opacity: 0.95;
+}
+
+.showcase-item:hover {
+    opacity: 1;
+}
+
+.showcase-item.reverse {
+    direction: rtl;
+}
+
+.showcase-item.reverse > * {
+    direction: ltr;
+}
+
+.showcase-image {
+    width: 100%;
+    height: 350px;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.showcase-image:hover {
+    transform: scale(1.03);
+    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.6);
+}
+
+.showcase-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.showcase-content {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+}
+
+.showcase-content h2 {
+    font-size: 2rem;
+    color: #101824;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.showcase-content p {
+    font-size: 1.05rem;
+    line-height: 1.8;
+    color: #4a5568;
+    font-family: 'Georgia', 'Times New Roman', serif;
+}
+
+.about-container {
+    flex: 1;
+    max-width: 900px;
+    margin: 4rem auto;
+    padding: 0 2rem;
+}
+
+.about-header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.about-header h1 {
+    font-size: 3rem;
+    color: #ffffff;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    letter-spacing: 1px;
+}
+
+.about-header .subtitle {
+    font-size: 1.2rem;
+    color: #00AA13;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
+
+.about-content {
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 20px;
+    padding: 3rem;
+    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(10px);
+}
+
+.about-section {
+    margin-bottom: 2.5rem;
+}
+
+.about-section:last-child {
+    margin-bottom: 0;
+}
+
+.about-section h2 {
+    font-size: 1.8rem;
+    color: #101824;
+    margin-bottom: 1rem;
+    position: relative;
+    padding-bottom: 0.5rem;
+}
+
+.about-section h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 60px;
+    height: 3px;
+    background: #00AA13;
+    border-radius: 2px;
+}
+
+.about-section p {
+    font-size: 1.05rem;
+    line-height: 1.9;
+    color: #4a5568;
+    text-align: justify;
+    margin-bottom: 1rem;
+}
+
+.about-section p:last-child {
+    margin-bottom: 0;
+}
+
+.highlight-box {
+    background: linear-gradient(135deg, #e8f5e9 0%, #c8e6c9 100%);
+    border-left: 4px solid #00AA13;
+    padding: 1.5rem;
+    border-radius: 10px;
+    margin-top: 1.5rem;
+}
+
+.highlight-box p {
+    margin: 0;
+    color: #1a202c;
+    font-weight: 500;
+}
 
 footer {
-    background-color: #000000;
+    background: #101824;
     color: #fff;
-    padding: 40px 20px;
-    margin-top: auto;
+    padding: 50px 20px 20px;
+    box-shadow: 0 -8px 20px rgba(0,0,0,0.3);
+    font-family: 'Segoe UI', sans-serif;
 }
 
 .footer-content {
-    display: flex;
-    justify-content: space-around; 
-    flex-wrap: wrap; 
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 30px;
+    max-width: 1100px;
+    margin: auto;
 }
 
-.footer-section {
-    margin: 10px;
-    min-width: 200px;
-}
-
-.footer-section h2 {
+.footer-section h3 {
+    font-size: 18px;
     margin-bottom: 15px;
-    border-bottom: 1px solid #555;
-    padding-bottom: 5px;
+    position: relative;
+    color: #00AA13;
+}
+
+.footer-section h3::after {
+    content: "";
+    width: 40px;
+    height: 3px;
+    background: #00AA13;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    border-radius: 10px;
+}
+
+.footer-section p {
+    line-height: 1.7;
+    font-size: 14px;
+    color: #cbd5f5;
 }
 
 .footer-section ul {
@@ -326,30 +553,147 @@ footer {
 
 .footer-section ul li {
     margin-bottom: 10px;
+    font-size: 14px;
+    color: #cbd5f5;
 }
 
 .footer-section ul li a {
-    color: #ccc;
+    color: #cbd5f5;
     text-decoration: none;
+    transition: all 0.3s ease;
 }
 
 .footer-section ul li a:hover {
-    color: #fff;
+    color: #00AA13;
+    padding-left: 6px;
 }
 
 .footer-bottom {
     text-align: center;
-    margin-top: 30px;
-    padding-top: 20px;
-    border-top: 1px solid #555;
-    font-size: 0.9em;
+    margin-top: 40px;
+    padding-top: 15px;
+    border-top: 1px solid rgba(0, 170, 19, 0.2);
+    font-size: 13px;
+    color: #94a3b8;
 }
 
-/* Responsif */
+@media (max-width: 968px) {
+    .showcase-item {
+        grid-template-columns: 1fr;
+        gap: 30px;
+        margin-bottom: 60px;
+    }
+
+    .showcase-item.reverse {
+        direction: ltr;
+    }
+
+    .showcase-image {
+        height: 300px;
+    }
+
+    .showcase-content {
+        padding: 30px;
+    }
+
+    .showcase-content h2 {
+        font-size: 1.7rem;
+    }
+}
+
 @media (max-width: 768px) {
+    .home-content h1 {
+        font-size: 2.5rem;
+        letter-spacing: 1px;
+    }
+    
+    .paragaph {
+        font-size: 1.05rem;
+        padding: 30px 35px;
+        max-width: 90%;
+        line-height: 1.9;
+    }
+    
     .footer-content {
         flex-direction: column;
         align-items: center;
     }
+    
+    .nav-menu {
+        gap: 1rem;
+    }
+
+    .logo-image {
+        width: 38px;
+        height: 38px;
+    }
+
+    .about-header h1 {
+        font-size: 2.2rem;
+    }
+
+    .about-content {
+        padding: 2rem;
+    }
+
+    .about-section h2 {
+        font-size: 1.5rem;
+    }
 }
 
+/* Mobile */
+@media (max-width: 480px) {
+    .home-content h1 {
+        font-size: 2rem;
+    }
+    
+    .paragaph {
+        padding: 25px 30px;
+        font-size: 1rem;
+        line-height: 1.8;
+    }
+    
+    .paragaph::before {
+        width: 50px;
+        height: 50px;
+        font-size: 2rem;
+        top: -20px;
+    }
+    
+    .nav-container {
+        padding: 0 1rem;
+    }
+    
+    .logo {
+        font-size: 1.2rem;
+    }
+
+    .logo-image {
+        width: 32px;
+        height: 32px;
+    }
+
+    .logo-container {
+        gap: 0.4rem;
+    }
+
+    .about-container {
+        margin: 2rem auto;
+    }
+
+    .about-header h1 {
+        font-size: 1.8rem;
+    }
+
+    .about-header .subtitle {
+        font-size: 1rem;
+    }
+
+    .about-content {
+        padding: 1.5rem;
+    }
+
+    .about-section p {
+        font-size: 1rem;
+    }
+}
