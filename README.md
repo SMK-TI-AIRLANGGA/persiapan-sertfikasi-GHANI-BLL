@@ -25,3 +25,21 @@ git clone https://github.com/SMK-TI-AIRLANGGA/persiapan-sertfikasi-GHANI-BLL.git
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+
+## Struktur Repository
+```bash
+perpus-baru/
+│
+├── fotoberanda/        # Gambar untuk halaman beranda
+├── fotobuku/           # Gambar cover buku
+├── fotosekolah/        # Gambar pendukung sekolah
+│
+├── index.html          # Halaman Beranda
+├── book.html           # Halaman Katalog / Daftar Buku
+├── about.html          # Halaman Tentang
+├── login.html          # Halaman Login
+│
+├── styles.css          # File CSS utama (tampilan)
+├── style.css           # File CSS kedua (login)
+├── script.js           # JavaScript umum
+├── book.js             # JavaScript khusus fitur buku & search
