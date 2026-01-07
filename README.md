@@ -68,11 +68,21 @@ perpus-baru/
 
 ## Preview Aplikasi
 
-<img src="preview/beranda.png" width="250">
-<img src="preview/book1.png" width="250">
+### Tampilan Desktop
 
-<img src="preview/beranda1.png" width="250">
-<img src="preview/book.png" width="250">
+<p align="center">
+  <img src="preview/beranda.png" width="420" />
+  <img src="preview/book.png" width="420" />
+</p>
+
+---
+
+### Tampilan Mobile
+
+<p align="center">
+  <img src="preview/beranda1.png" width="240" />
+  <img src="preview/book1.png" width="240" />
+</p>
 
 ## License
 
