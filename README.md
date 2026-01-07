@@ -80,8 +80,8 @@ perpus-baru/
 ### Tampilan Mobile
 
 <p align="center">
-  <img src="preview/beranda1.png" width="300" />
   <img src="preview/book.png" width="300" />
+  <img src="preview/beranda1.png" width="300" />
 </p>
 
 ## License
